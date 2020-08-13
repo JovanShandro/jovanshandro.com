@@ -2,10 +2,17 @@
 @import "./components/main";
 @import "./components/navbar";
 @import "./components/about";
+@import "./animations/bounce";
+@import "./animations/rotate";
+@import "./animations/orbits";
 @import "./media/media";
 
 .mt-s {
   margin-top: 25px;
+}
+
+#root {
+  overflow: hidden;
 }
 
 body {
