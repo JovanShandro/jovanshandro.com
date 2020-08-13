@@ -1,6 +1,7 @@
 @import "./base/base";
 @import "./components/main";
 @import "./components/navbar";
+@import "./components/about";
 @import "./media/media";
 
 .mt-s {
@@ -27,12 +28,19 @@ hr {
   overflow: visible;
 }
 
-.main-info-section {
+.main-info-section,
+.work-category {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.text p,
+.about h1,
+.work h1,
+.contact h1 {
+  color: #707070;
+}
 
 a:not(.nav-link):not(.navbar-brand) {
   text-decoration: none;
@@ -42,4 +50,11 @@ a:not(.nav-link):not(.navbar-brand) {
   top: 50%;
   bottom: 50%;
   transform: translateY(-50%);
+}
+
+.about h1,
+.work h1 {
+  font-size: 16rem;
+  z-index: 0;
+  opacity: 0.4;
 }

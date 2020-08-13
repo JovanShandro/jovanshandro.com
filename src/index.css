@@ -109,8 +109,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 5;
-  background_color: red; }
+  z-index: 5; }
 
 .nav-content-wrapper {
   width: 100%;
@@ -141,6 +140,67 @@ nav {
 .scrolled {
   background: #707070b9 !important;
   transition: background 500ms; }
+
+.about {
+  height: minmax(calc(100vh), auto);
+  margin-top: 60px;
+  width: 100vw;
+  overflow: hidden; }
+  .about h1 {
+    margin-top: 50px; }
+  .about .about-me-info {
+    max-width: 900px;
+    padding: 50px;
+    position: relative;
+    top: 40px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 300px; }
+    .about .about-me-info p {
+      font-size: 2.6rem;
+      color: #bebebe; }
+    .about .about-me-info p:nth-child(2),
+    .about .about-me-info p:nth-child(3) {
+      margin-top: 30px; }
+    .about .about-me-info .right-corner {
+      position: absolute;
+      right: -20%;
+      top: -11%;
+      transform: scale(3);
+      opacity: 0.7; }
+    .about .about-me-info .left-corner {
+      position: absolute;
+      left: -35%;
+      bottom: 30%;
+      transform: scale(2);
+      opacity: 0.7; }
+    .about .about-me-info .bottom {
+      position: absolute;
+      left: -20%;
+      bottom: -30%;
+      transform: scale(1.6);
+      opacity: 0.7; }
+    .about .about-me-info .star {
+      background: rgba(119, 119, 119, 0.541);
+      width: 80px;
+      height: 80px;
+      position: relative;
+      text-align: center;
+      z-index: -1;
+      animation: rotate 6s linear infinite; }
+      .about .about-me-info .star:before, .about .about-me-info .star:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80px;
+        width: 80px;
+        background: rgba(119, 119, 119, 0.541); }
+      .about .about-me-info .star:before {
+        transform: rotate(30deg); }
+      .about .about-me-info .star:after {
+        transform: rotate(60deg); }
 
 @media screen and (max-width: 1435px) {
   .right-corner {
@@ -350,10 +410,17 @@ hr {
   margin-bottom: 1.3rem;
   overflow: visible; }
 
-.main-info-section {
+.main-info-section,
+.work-category {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+
+.text p,
+.about h1,
+.work h1,
+.contact h1 {
+  color: #707070; }
 
 a:not(.nav-link):not(.navbar-brand) {
   text-decoration: none;
@@ -363,3 +430,9 @@ a:not(.nav-link):not(.navbar-brand) {
   top: 50%;
   bottom: 50%;
   transform: translateY(-50%); }
+
+.about h1,
+.work h1 {
+  font-size: 16rem;
+  z-index: 0;
+  opacity: 0.4; }
