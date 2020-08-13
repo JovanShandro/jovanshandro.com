@@ -101,6 +101,47 @@ body {
     color: #8cc0f0;
     animation: bounce 1.3s; }
 
+nav {
+  height: 5vh;
+  background: transparent;
+  min-height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background_color: red; }
+
+.nav-content-wrapper {
+  width: 100%;
+  height: 100%; }
+
+.nav-brand {
+  display: none; }
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 60%;
+  max-width: 550px;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto; }
+  .nav-links li a {
+    color: #d4d3d3;
+    font-size: 2rem !important;
+    text-decoration: none;
+    font-weight: 100;
+    text-transform: uppercase; }
+    .nav-links li a:hover {
+      font-size: 2.3rem;
+      color: white; }
+
+.scrolled {
+  background: #707070b9 !important;
+  transition: background 500ms; }
+
 @media screen and (max-width: 1435px) {
   .right-corner {
     right: -14% !important;
