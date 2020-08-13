@@ -1,0 +1,37 @@
+.work {
+  height: minmax(calc(100vh), auto);
+  width: 100vw;
+
+  h2 {
+    font-size: 25px !important;
+  }
+
+  div[class^="category-"] {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+  }
+
+  a {
+    justify-self: center;
+    position: relative;
+    display: inline-block;
+
+    img {
+      width: 350px;
+      justify-self: center;
+    }
+  }
+}
+
+/* firefox only */
+@-moz-document url-prefix() {
+  .work p {
+    font-size: 14px !important;
+  }
+  .work h2 {
+    font-size: 22px !important;
+  }
+}
+

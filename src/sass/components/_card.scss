@@ -1,0 +1,387 @@
+.category-projects {
+  .card-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .card {
+    &1,
+    &2,
+    &3,
+    &4,
+    &5,
+    &6,
+    &7 {
+      display: grid !important;
+      grid-template-columns: 300px;
+      grid-template-rows: 150px 225px 80px;
+      grid-template-areas: "image" "text" "btns";
+
+      font-family: roboto;
+      border-radius: 18px !important;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+      text-align: center;
+    }
+
+    &1 {
+      background: rgb(22, 22, 22) !important;
+
+      &-image {
+        grid-area: image;
+        background-image: url("/img/blog.png");
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+      }
+
+      &-text {
+        grid-area: text;
+        margin: 25px;
+      }
+
+      &-text p {
+        color: rgb(194, 188, 188);
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      &-text h2 {
+        font-size: 28px;
+        margin-top: 0px;
+        color: white;
+      }
+
+      &-btns {
+        grid-area: btns;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      & a,
+      & i {
+        color: rgb(148, 151, 151);
+        font-size: 13px !important;
+      }
+
+      & a {
+        align-self: flex-start;
+      }
+
+      & i {
+        align-self: center;
+      }
+
+      & a:hover,
+      & i:hover {
+        cursor: pointer;
+        color: rgb(200, 202, 202);
+      }
+    }
+    &2 {
+      background: rgb(46, 10, 43) !important;
+
+      &-image {
+        grid-area: image;
+        background-image: url("/img/sort.png");
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+      }
+
+      &-text {
+        grid-area: text;
+        margin: 25px;
+      }
+
+      &-text p {
+        color: rgb(194, 188, 188);
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      &-text h2 {
+        font-size: 28px;
+        margin-top: 0px;
+        color: white;
+      }
+
+      &-btns {
+        grid-area: btns;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 10px;
+      }
+
+      & a {
+        color: rgb(192, 139, 188);
+        font-size: 13px !important;
+      }
+
+      & a:hover {
+        color: rgb(214, 174, 211);
+      }
+    }
+    &3 {
+      background: rgb(41, 36, 41) !important;
+
+      &-image {
+        grid-area: image;
+        background-image: url("/img/pathCrop.png");
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+      }
+
+      &-text {
+        grid-area: text;
+        margin: 25px;
+      }
+
+      &-text p {
+        color: rgb(194, 188, 188);
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      &-text h2 {
+        font-size: 28px;
+        margin-top: 0px;
+        color: white;
+      }
+
+      &-btns {
+        grid-area: btns;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      & a {
+        color: rgb(146, 140, 145);
+        font-size: 13px !important;
+      }
+
+      & a:hover {
+        color: rgb(192, 189, 191);
+      }
+    }
+    &4 {
+      background: rgba(56, 11, 18, 0.767) !important;
+
+      &-image {
+        grid-area: image;
+        background-image: url("/img/todo.png");
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+      }
+
+      &-text {
+        grid-area: text;
+        margin: 25px;
+      }
+
+      &-text p {
+        color: rgb(194, 188, 188);
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      &-text h2 {
+        font-size: 28px;
+        margin-top: 0px;
+        color: white;
+      }
+
+      &-btns {
+        grid-area: btns;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      & a {
+        color: rgb(207, 117, 129);
+        font-size: 13px !important;
+      }
+
+      & a:hover {
+        color: rgb(219, 157, 166);
+      }
+    }
+    &5 {
+      background: rgb(5, 53, 53) !important;
+
+      &-image {
+        grid-area: image;
+        background-image: url("/img/movies.png");
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+      }
+
+      &-text {
+        grid-area: text;
+        margin: 25px;
+      }
+
+      &-text p {
+        color: rgb(194, 188, 188);
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      &-text h2 {
+        font-size: 28px;
+        margin-top: 0px;
+        color: white;
+      }
+
+      &-btns {
+        grid-area: btns;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      & a {
+        color: rgb(97, 150, 150);
+        font-size: 13px !important;
+      }
+
+      & a:hover {
+        color: rgb(145, 189, 189);
+      }
+    }
+
+    &6 {
+      background: rgb(90, 11, 70) !important;
+
+      &-image {
+        grid-area: image;
+        background-image: url("/img/sudoku.png");
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+      }
+
+      &-text {
+        grid-area: text;
+        margin: 25px;
+      }
+
+      &-text p {
+        color: rgb(230, 222, 222);
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      &-text h2 {
+        font-size: 28px;
+        margin-top: 0px;
+        color: white;
+      }
+
+      &-btns {
+        grid-area: btns;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      & a {
+        color: rgb(184, 124, 169);
+        font-size: 13px !important;
+      }
+
+      & a:hover {
+        color: rgb(233, 187, 227);
+      }
+    }
+
+    &7 {
+      background: rgb(3, 44, 12) !important;
+
+      &-image {
+        grid-area: image;
+        background-image: url("/img/agribalkanika.png");
+        background-position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 0px;
+      }
+
+      &-text {
+        grid-area: text;
+        margin: 25px;
+      }
+
+      &-text p {
+        color: rgb(230, 222, 222);
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      &-text h2 {
+        font-size: 28px;
+        margin-top: 0px;
+        color: white;
+      }
+
+      &-btns {
+        grid-area: btns;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+
+      & a {
+        color: rgb(84, 148, 98);
+        font-size: 13px !important;
+      }
+
+      & a:hover {
+        color: rgb(174, 255, 167);
+      }
+    }
+  }
+}
+
+.plane {
+  transform: scale(2.1);
+}
+
+.macka {
+  transform: scale(2.3) !important;
+}
