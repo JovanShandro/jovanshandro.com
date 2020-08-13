@@ -1,7 +1,8 @@
 import React from "react";
-import MainSection from "./sections/Main";
 import Navbar from "./sections/Navbar";
+import MainSection from "./sections/Main";
 import AboutSection from "./sections/About";
+import SkillsSection from "./sections/Skills";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <MainSection />
       <AboutSection />
+      <SkillsSection />
     </React.Fragment>
   );
 }

@@ -202,6 +202,94 @@ nav {
       .about .about-me-info .star:after {
         transform: rotate(60deg); }
 
+.skills {
+  height: minmax(calc(100vh), auto);
+  margin-top: 60px;
+  padding-bottom: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw; }
+  .skills h1 {
+    color: #ddd5d5cc !important;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    font-size: 16rem;
+    text-align: center; }
+  .skills p {
+    font-size: 3rem; }
+  .skills-content {
+    width: 100%; }
+  .skills::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background-image: url("/img/skills.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .skills-info {
+    font-size: 1.4rem;
+    color: #bebebe;
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap; }
+  .skills .mainSkillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px; }
+  .skills div[class^="tag"] {
+    width: 140px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: transparent !important;
+    margin-right: 30px; }
+    .skills div[class^="tag"] p {
+      color: #fff;
+      text-align: left;
+      padding-left: 10px;
+      font-size: 3rem;
+      padding-top: 10px;
+      color: transparent !important;
+      background: #03806b !important;
+      background: -webkit-linear-gradient(left, #49beb5, #03806b) !important;
+      background: -moz-linear-gradient(left, #49beb5, #03806b) !important;
+      background: linear-gradient(to right, #49beb5, #03806b) !important;
+      background-clip: text !important;
+      -webkit-background-clip: text !important; }
+  .skills .progressbar {
+    position: relative;
+    width: 600px;
+    height: 20px;
+    border: 2px solid #58e9d1;
+    border-radius: 20px;
+    margin-top: 17px; }
+    .skills .progressbar .bar {
+      position: absolute;
+      background-color: #49beb5;
+      height: 10px;
+      border-radius: 20px;
+      margin: 2.7px; }
+  .skills .skill {
+    margin-left: 5px; }
+    .skills .skill:hover {
+      font-weight: bold;
+      color: #3da1a8 !important; }
+
 /* animations */
 @keyframes bounce {
   0% {
@@ -398,9 +486,9 @@ nav {
 @media screen and (max-width: 985px) {
   .work {
     margin-top: 50px !important; }
-  div[class^="tag-"] {
+  div[class^="tag"] {
     padding: 0 !important; }
-  div[class^="tag-"] p {
+  div[class^="tag"] p {
     text-align: center !important;
     margin: 0 auto;
     font-weight: bold;
