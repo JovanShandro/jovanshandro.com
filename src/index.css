@@ -252,7 +252,7 @@ nav {
     justify-content: center;
     margin-bottom: 40px; }
   .skills div[class^="tag"] {
-    width: 140px;
+    width: 180px;
     height: 50px;
     display: flex;
     align-items: center;
