@@ -298,7 +298,7 @@ nav {
   justify-content: center;
   margin-top: 20px; }
 
-.category-projects .card1, .category-projects .card2, .category-projects .card3, .category-projects .card4, .category-projects .card5, .category-projects .card6, .category-projects .card7 {
+.category-projects .card {
   display: grid !important;
   grid-template-columns: 300px;
   grid-template-rows: 150px 225px 80px;
@@ -307,251 +307,40 @@ nav {
   border-radius: 18px !important;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
   text-align: center; }
-
-.category-projects .card1 {
-  background: #161616 !important; }
-  .category-projects .card1-image {
+  .category-projects .card-image {
     grid-area: image;
-    background-image: url("/img/blog.png");
     background-position: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0px; }
-  .category-projects .card1-text {
+  .category-projects .card-text {
     grid-area: text;
     margin: 25px; }
-  .category-projects .card1-text p {
-    color: #c2bcbc;
+  .category-projects .card-text p {
     font-size: 16px;
     font-weight: 300; }
-  .category-projects .card1-text h2 {
+  .category-projects .card-text h2 {
     font-size: 28px;
     margin-top: 0px;
     color: white; }
-  .category-projects .card1-btns {
+  .category-projects .card-btns {
     grid-area: btns;
     height: 100%;
     display: flex;
     justify-content: space-around; }
-  .category-projects .card1 a,
-  .category-projects .card1 i {
+  .category-projects .card a {
+    font-size: 13px !important; }
+  .category-projects .card i.fa-film {
     color: #949797;
-    font-size: 13px !important; }
-  .category-projects .card1 a {
-    align-self: flex-start; }
-  .category-projects .card1 i {
+    font-size: 13px !important;
     align-self: center; }
-  .category-projects .card1 a:hover,
-  .category-projects .card1 i:hover {
-    cursor: pointer;
-    color: #c8caca; }
-
-.category-projects .card2 {
-  background: #2e0a2b !important; }
-  .category-projects .card2-image {
-    grid-area: image;
-    background-image: url("/img/sort.png");
-    background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 0px; }
-  .category-projects .card2-text {
-    grid-area: text;
-    margin: 25px; }
-  .category-projects .card2-text p {
-    color: #c2bcbc;
-    font-size: 16px;
-    font-weight: 300; }
-  .category-projects .card2-text h2 {
-    font-size: 28px;
-    margin-top: 0px;
-    color: white; }
-  .category-projects .card2-btns {
-    grid-area: btns;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 10px; }
-  .category-projects .card2 a {
-    color: #c08bbc;
-    font-size: 13px !important; }
-  .category-projects .card2 a:hover {
-    color: #d6aed3; }
-
-.category-projects .card3 {
-  background: #292429 !important; }
-  .category-projects .card3-image {
-    grid-area: image;
-    background-image: url("/img/pathCrop.png");
-    background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 0px; }
-  .category-projects .card3-text {
-    grid-area: text;
-    margin: 25px; }
-  .category-projects .card3-text p {
-    color: #c2bcbc;
-    font-size: 16px;
-    font-weight: 300; }
-  .category-projects .card3-text h2 {
-    font-size: 28px;
-    margin-top: 0px;
-    color: white; }
-  .category-projects .card3-btns {
-    grid-area: btns;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; }
-  .category-projects .card3 a {
-    color: #928c91;
-    font-size: 13px !important; }
-  .category-projects .card3 a:hover {
-    color: #c0bdbf; }
-
-.category-projects .card4 {
-  background: rgba(56, 11, 18, 0.767) !important; }
-  .category-projects .card4-image {
-    grid-area: image;
-    background-image: url("/img/todo.png");
-    background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 0px; }
-  .category-projects .card4-text {
-    grid-area: text;
-    margin: 25px; }
-  .category-projects .card4-text p {
-    color: #c2bcbc;
-    font-size: 16px;
-    font-weight: 300; }
-  .category-projects .card4-text h2 {
-    font-size: 28px;
-    margin-top: 0px;
-    color: white; }
-  .category-projects .card4-btns {
-    grid-area: btns;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; }
-  .category-projects .card4 a {
-    color: #cf7581;
-    font-size: 13px !important; }
-  .category-projects .card4 a:hover {
-    color: #db9da6; }
-
-.category-projects .card5 {
-  background: #053535 !important; }
-  .category-projects .card5-image {
-    grid-area: image;
-    background-image: url("/img/movies.png");
-    background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0px; }
-  .category-projects .card5-text {
-    grid-area: text;
-    margin: 25px; }
-  .category-projects .card5-text p {
-    color: #c2bcbc;
-    font-size: 16px;
-    font-weight: 300; }
-  .category-projects .card5-text h2 {
-    font-size: 28px;
-    margin-top: 0px;
-    color: white; }
-  .category-projects .card5-btns {
-    grid-area: btns;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; }
-  .category-projects .card5 a {
-    color: #619696;
-    font-size: 13px !important; }
-  .category-projects .card5 a:hover {
-    color: #91bdbd; }
-
-.category-projects .card6 {
-  background: #5a0b46 !important; }
-  .category-projects .card6-image {
-    grid-area: image;
-    background-image: url("/img/sudoku.png");
-    background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0px; }
-  .category-projects .card6-text {
-    grid-area: text;
-    margin: 25px; }
-  .category-projects .card6-text p {
-    color: #e6dede;
-    font-size: 16px;
-    font-weight: 300; }
-  .category-projects .card6-text h2 {
-    font-size: 28px;
-    margin-top: 0px;
-    color: white; }
-  .category-projects .card6-btns {
-    grid-area: btns;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; }
-  .category-projects .card6 a {
-    color: #b87ca9;
-    font-size: 13px !important; }
-  .category-projects .card6 a:hover {
-    color: #e9bbe3; }
-
-.category-projects .card7 {
-  background: #032c0c !important; }
-  .category-projects .card7-image {
-    grid-area: image;
-    background-image: url("/img/agribalkanika.png");
-    background-position: center;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 0px; }
-  .category-projects .card7-text {
-    grid-area: text;
-    margin: 25px; }
-  .category-projects .card7-text p {
-    color: #e6dede;
-    font-size: 16px;
-    font-weight: 300; }
-  .category-projects .card7-text h2 {
-    font-size: 28px;
-    margin-top: 0px;
-    color: white; }
-  .category-projects .card7-btns {
-    grid-area: btns;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start; }
-  .category-projects .card7 a {
-    color: #549462;
-    font-size: 13px !important; }
-  .category-projects .card7 a:hover {
-    color: #aeffa7; }
+  .category-projects .card i.fa-film:hover {
+    color: #c8caca;
+    cursor: pointer; }
+  .category-projects .card a:hover {
+    cursor: pointer; }
 
 .plane {
   transform: scale(2.1); }
@@ -940,6 +729,15 @@ nav {
 
 .mt-s {
   margin-top: 25px; }
+
+.mt-xs {
+  margin-top: 10px; }
+
+.align-start {
+  align-items: flex-start; }
+
+.align-self-start {
+  align-self: flex-start; }
 
 #root {
   overflow: hidden; }
