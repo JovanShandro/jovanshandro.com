@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLinks } from "../lib/constants";
+import { NavLinks } from "../lib";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +16,8 @@ const Navbar = () => {
           <div className="line"></div>
         </div>
         <ul className={isOpen ? "nav-links open" : "nav-links"}>
-          {NavLinks.map(link => (
-            <li className={isOpen ? "fade" : ""}>
+          {NavLinks.map((link, i) => (
+            <li className={isOpen ? "fade" : ""} key={i}>
               <a href={link.ref} onClick={() => setIsOpen(false)}>
                 {link.name}
               </a>
