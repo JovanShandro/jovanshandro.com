@@ -14,6 +14,18 @@
   margin-top: 25px;
 }
 
+.mt-xs {
+  margin-top: 10px;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
 #root {
   overflow: hidden;
 }
