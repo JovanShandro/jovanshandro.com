@@ -4,6 +4,7 @@ import MainSection from "./sections/Main";
 import AboutSection from "./sections/About";
 import SkillsSection from "./sections/Skills";
 import ProjectsSection from "./sections/Projects";
+import ContactsSection from "./sections/Contacts";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
+      <ContactsSection />
     </React.Fragment>
   );
 }
