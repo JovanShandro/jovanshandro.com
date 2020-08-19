@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./sections/Navbar";
+import Footer from "./components/Footer";
 import MainSection from "./sections/Main";
 import AboutSection from "./sections/About";
 import SkillsSection from "./sections/Skills";
@@ -15,6 +16,7 @@ function App() {
       <SkillsSection />
       <ProjectsSection />
       <ContactsSection />
+      <Footer />
     </React.Fragment>
   );
 }
