@@ -456,6 +456,55 @@ footer .call span {
   margin-left: 15px;
   font-size: 2rem; }
 
+.video-card-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+.video-card {
+  background-color: white;
+  width: 80vw;
+  height: 78vh; }
+
+/* The Close Button */
+.closeContainer {
+  border-radius: 50%;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 12vh;
+  right: 12vw;
+  z-index: 3; }
+
+.close {
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  transform: scale(1.5); }
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer; }
+
 /* animations */
 @keyframes bounce {
   0% {

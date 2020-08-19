@@ -79,8 +79,11 @@ const Card: React.FC<Props> = ({
             </a>
           ) : (
             <i
-              //TODO add real function
-              onClick={() => "showVideo()"}
+              onClick={() => {
+                (document.querySelector(
+                  ".video-card-container"
+                )! as HTMLDivElement).style.display = "flex";
+              }}
               className="plane fas fa-film"
             ></i>
           )}

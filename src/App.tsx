@@ -6,10 +6,12 @@ import AboutSection from "./sections/About";
 import SkillsSection from "./sections/Skills";
 import ProjectsSection from "./sections/Projects";
 import ContactsSection from "./sections/Contacts";
+import VideoCard from "./components/VideoCard";
 
 function App() {
   return (
     <React.Fragment>
+      <VideoCard src="/img/blogapp.mov" />
       <Navbar />
       <MainSection />
       <AboutSection />
