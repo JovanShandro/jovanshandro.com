@@ -1,5 +1,6 @@
 import React, { useState, useRef, CSSProperties } from "react";
 import { Project } from "../lib/types";
+import ReactGa from "react-ga";
 
 type Props = {
   id: number;
@@ -55,6 +56,10 @@ const Card: React.FC<Props> = ({
               href={githubLink}
               onMouseEnter={() => {
                 setGithubHovered(true);
+                ReactGa.event({
+                  category: "Projects",
+                  action: "Hovered over github link"
+                });
               }}
               onMouseLeave={() => setGithubHovered(false)}
               style={githubLinkStyle.current as CSSProperties}
@@ -69,6 +74,10 @@ const Card: React.FC<Props> = ({
               href={websiteLink}
               onMouseEnter={() => {
                 setWebsiteHovered(true);
+                ReactGa.event({
+                  category: "Projects",
+                  action: "Hovered over website link"
+                });
               }}
               onMouseLeave={() => {
                 setWebsiteHovered(false);
@@ -83,6 +92,10 @@ const Card: React.FC<Props> = ({
                 (document.querySelector(
                   ".video-card-container"
                 )! as HTMLDivElement).style.display = "flex";
+                ReactGa.event({
+                  category: "Projects",
+                  action: "Opened video"
+                });
               }}
               className="plane fas fa-film"
             ></i>
