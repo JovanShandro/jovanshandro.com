@@ -13,7 +13,7 @@ function App() {
   return (
     <React.Fragment>
       <Head>
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta
@@ -24,8 +24,6 @@ function App() {
           name="keywords"
           content="blockchain, javascript, web, developer, student, computer science, programming"
         />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link
           href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
           rel="stylesheet"
