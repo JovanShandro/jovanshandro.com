@@ -54,12 +54,14 @@ const Card: React.FC<Props> = ({
           {githubLink && (
             <a
               href={githubLink}
-              onMouseEnter={() => {
-                setGithubHovered(true);
+              onClick={() => {
                 ReactGa.event({
                   category: "Projects",
                   action: "Hovered over github link"
                 });
+              }}
+              onMouseEnter={() => {
+                setGithubHovered(true);
               }}
               onMouseLeave={() => setGithubHovered(false)}
               style={githubLinkStyle.current as CSSProperties}
@@ -72,12 +74,14 @@ const Card: React.FC<Props> = ({
           {websiteLink ? (
             <a
               href={websiteLink}
-              onMouseEnter={() => {
-                setWebsiteHovered(true);
+              onClick={() => {
                 ReactGa.event({
                   category: "Projects",
                   action: "Hovered over website link"
                 });
+              }}
+              onMouseEnter={() => {
+                setWebsiteHovered(true);
               }}
               onMouseLeave={() => {
                 setWebsiteHovered(false);

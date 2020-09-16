@@ -1,8 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLinks } from "../lib";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handler = () => {
+      var scrolled = document.scrollingElement!.scrollTop;
+      if (scrolled >= 50) {
+        document.querySelector("nav")?.classList.add("scrolled");
+      } else {
+        document.querySelector("nav")?.classList.remove("scrolled");
+      }
+    };
+    document.addEventListener("scroll", handler);
+
+    return () => {
+      document.removeEventListener("scroll", handler);
+    };
+  }, []);
 
   return (
     <nav>

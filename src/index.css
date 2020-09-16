@@ -5,6 +5,7 @@
   font-family: "PT Sans"; }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 62.5%;
   /*10px*/
@@ -102,9 +103,7 @@ body {
     animation: bounce 1.3s; }
 
 nav {
-  height: 5vh;
-  background: transparent;
-  min-height: 40px;
+  height: 50px;
   position: fixed;
   top: 0;
   left: 0;
@@ -810,7 +809,7 @@ footer .call span {
 
 @media screen and (max-width: 480px) {
   html {
-    font-size: 6px !important; }
+    font-size: 5.5px !important; }
     html .wrapper {
       padding: 20px !important; }
     html .work .card-wrapper {
