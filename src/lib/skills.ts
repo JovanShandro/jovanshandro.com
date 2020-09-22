@@ -1,27 +1,27 @@
 export const skills = [
-  "Solidity",
-  "Ethereum",
   "HTML",
   "CSS",
   "Javascript",
-  "Vue.js",
-  "Node.js",
   "React.js",
   "React Native",
+  "Node.js",
+  "Vue.js",
+  "Ionic",
   "Firebase",
   "Pouchdb",
   "MongoDb",
-  "Algorithms",
+  "PostgreSQL",
+  "GraphQL",
+  "Solidity",
+  "Ethereum",
   "C++",
   "C",
-  "Java",
-  "Python",
-  "SQL"
+  "Algorithms"
 ];
 
 export const bars = [
   {
-    name: "Vue.js",
+    name: "Node.js",
     width: "92%"
   },
   {

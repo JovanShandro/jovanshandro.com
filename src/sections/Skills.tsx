@@ -10,7 +10,7 @@ const SkillsSection: React.FC<{}> = () => {
           My technical skills include:
           {skills.map((skill, i) => (
             <span className="skill" key={i}>
-              {skill !== "SQL" ? skill + "," : skill}
+              {skill !== "C" ? skill + "," : skill}
             </span>
           ))}
         </p>
