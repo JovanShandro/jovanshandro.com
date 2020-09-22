@@ -68,7 +68,7 @@ const ContactsSection = () => {
             });
           }}
         >
-          <img src="./img/xing.png" alt="" />
+          <img src="./img/xing.webp" alt="" />
         </div>
       </div>
     </div>

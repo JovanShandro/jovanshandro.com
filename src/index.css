@@ -48,7 +48,7 @@ body {
     height: 100%;
     z-index: -1;
     opacity: 0.15;
-    background-image: url("/img/main.jpg");
+    background-image: url("/img/main.webp");
     background-repeat: no-repeat;
     background-size: cover; }
   .main-info-section .text {
@@ -229,7 +229,7 @@ nav {
     height: 100%;
     z-index: -1;
     opacity: 0.2;
-    background-image: url("/img/skills.jpg");
+    background-image: url("/img/skills.webp");
     background-repeat: no-repeat;
     background-size: cover; }
   .skills-info {
@@ -387,7 +387,7 @@ nav {
     height: 100%;
     z-index: -1;
     opacity: 0.2;
-    background-image: url("/img/mail.png");
+    background-image: url("/img/mail.webp");
     background-repeat: no-repeat;
     background-size: cover; }
   .contact h1 {

@@ -86,7 +86,7 @@ const MainSection = () => {
         </div>
       </div>
       <div className="profile-image">
-        <img src="img/profile.png" alt="" />
+        <img src="img/profile.webp" alt="" />
       </div>
     </div>
   );
