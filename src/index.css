@@ -286,7 +286,6 @@ nav {
   .skills .skill {
     margin-left: 5px; }
     .skills .skill:hover {
-      font-weight: bold;
       color: #3da1a8 !important; }
 
 .category-projects .card-wrapper {
