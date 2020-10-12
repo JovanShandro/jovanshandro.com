@@ -2,14 +2,15 @@ import React, { useRef } from "react";
 
 interface Props {
   src: string;
+  id: string;
 }
 
-const VideoCard: React.FC<Props> = ({ src }) => {
+const VideoCard: React.FC<Props> = ({ src, id }) => {
   const modal = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
 
   return (
-    <div className="video-card-container" ref={modal}>
+    <div id={id} className="video-card-container" ref={modal}>
       <div
         className="closeContainer"
         onClick={() => {

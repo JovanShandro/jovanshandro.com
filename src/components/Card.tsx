@@ -4,6 +4,7 @@ import ReactGa from "react-ga";
 
 type Props = {
   id: number;
+  videoId?: string;
 } & Project;
 
 const Card: React.FC<Props> = ({
@@ -16,7 +17,8 @@ const Card: React.FC<Props> = ({
   paragraphColor,
   linkColor,
   hoverLinkColor,
-  backgroundImage
+  backgroundImage,
+  videoId
 }) => {
   const [githubHovered, setGithubHovered] = useState(false);
   const [websiteHovered, setWebsiteHovered] = useState(false);
@@ -40,17 +42,7 @@ const Card: React.FC<Props> = ({
           <h2>{title}</h2>
           <p style={{ color: paragraphColor }}>{description} </p>
         </div>
-        <div
-          className={
-            // if blog
-            id === 2
-              ? "card-btns"
-              : // If sorting visualiser
-              id === 3
-              ? "card-btns mt-xs align-start"
-              : "card-btns align-start"
-          }
-        >
+        <div className="card-btns align-start">
           {githubLink && (
             <a
               href={githubLink}
@@ -94,14 +86,14 @@ const Card: React.FC<Props> = ({
             <i
               onClick={() => {
                 (document.querySelector(
-                  ".video-card-container"
+                  `#${videoId}`
                 )! as HTMLDivElement).style.display = "flex";
                 ReactGa.event({
                   category: "Projects",
-                  action: "Opened video"
+                  action: `Opened video ${videoId}`
                 });
               }}
-              className="plane fas fa-film"
+              className={`plane fas fa-film video-${videoId}`}
             ></i>
           )}
         </div>

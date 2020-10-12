@@ -331,12 +331,19 @@ nav {
     justify-content: space-around; }
   .category-projects .card a {
     font-size: 13px !important; }
-  .category-projects .card i.fa-film {
+  .category-projects .card i.video-blog {
     color: #949797;
     font-size: 13px !important;
     align-self: center; }
-  .category-projects .card i.fa-film:hover {
+  .category-projects .card i.video-blog:hover {
     color: #c8caca;
+    cursor: pointer; }
+  .category-projects .card i.video-sorting {
+    color: #69898a;
+    font-size: 13px !important;
+    align-self: center; }
+  .category-projects .card i.video-sorting:hover {
+    color: #a5bebe;
     cursor: pointer; }
   .category-projects .card a:hover {
     cursor: pointer; }

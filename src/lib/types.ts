@@ -8,4 +8,5 @@ export type Project = {
   backgroundColor: string;
   hoverLinkColor: string;
   backgroundImage: string;
+  videoId?: string;
 };

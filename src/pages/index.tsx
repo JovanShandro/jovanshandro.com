@@ -37,7 +37,8 @@ function App() {
         <title>Jovan Shandro</title>
       </Head>
 
-      <VideoCard src="/img/blogapp.mov" />
+      <VideoCard id="sorting" src="/img/sorting.mov" />
+      <VideoCard id="blog" src="/img/blogapp.mov" />
       <Navbar />
       <MainSection />
       <AboutSection />
