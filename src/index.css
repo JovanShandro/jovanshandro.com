@@ -52,7 +52,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover; }
   .main-info-section .text {
-    margin: 0 auto;
     text-align: center; }
     .main-info-section .text .word {
       display: inline-block;
@@ -92,8 +91,9 @@ body {
       .main-info-section .text a:hover::before {
         height: 100%; }
   .main-info-section .profile-image img {
-    max-width: 550px;
-    height: calc(100vh - 150px); }
+    height: calc(100vh - 150px);
+    max-height: 900px;
+    max-width: 550px; }
   .main-info-section span.name {
     color: #4a739a; }
   .main-info-section span.m-left {
@@ -900,7 +900,7 @@ hr {
 .work-category {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .text p,
 .about h1,

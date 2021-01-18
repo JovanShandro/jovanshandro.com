@@ -29,7 +29,6 @@
     background-size: cover;
   }
   .text {
-    margin: 0 auto;
     text-align: center;
     .word {
       display: inline-block;
@@ -83,8 +82,9 @@
   }
 
   .profile-image img {
-    max-width: 550px;
     height: calc(100vh - 150px);
+    max-height: 900px;
+    max-width: 550px;
   }
 
   span {
