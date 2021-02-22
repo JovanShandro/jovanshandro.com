@@ -6,7 +6,7 @@ const AboutSection = () => {
       <h1>About Me</h1>
       <div className="about-me-info">
         <p>
-          I am a second year Computer Science student at Jacobs University
+          I am a Computer Science student at Jacobs University
           Bremen. I discovered my passion for coding during high school, which
           lead me to dive deep into the programming world.
         </p>
@@ -20,7 +20,7 @@ const AboutSection = () => {
           Being in the Blockchain Industry for quite some time now, I have
           realised how powerful this technology can be, and want to discover
           even more about it. Other than that, of course I cannot forget to
-          mention my love for web and app development using Javascript.
+          mention my love for web and app development using Javascript/Typescript.
         </p>
         <div className="right-corner">
           <div className="star"></div>
