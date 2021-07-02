@@ -6,73 +6,73 @@ const MainSection = () => {
       <div className="text">
         <h1 id="main-h1">
           <span className="word">
-            <span className="orbit">W</span>
-            <span className="m-left inverse-orbit">e</span>
-            <span className="m-left orbit">l</span>
-            <span className="m-left inverse-orbit">c</span>
-            <span className="m-left orbit">o</span>
-            <span className="m-left inverse-orbit">m</span>
-            <span className="m-left orbit">e</span>
-            <span className="m-left inverse-orbit">,</span>
+            <span>W</span>
+            <span className="m-left">e</span>
+            <span className="m-left">l</span>
+            <span className="m-left">c</span>
+            <span className="m-left">o</span>
+            <span className="m-left">m</span>
+            <span className="m-left">e</span>
+            <span className="m-left">,</span>
           </span>
           <br />
           <span className="word">
-            <span className="orbit">I</span>
+            <span>I</span>
           </span>
           <div className="word">
-            <span className="inverse-orbit">a</span>
-            <span className="m-left orbit">m</span>
+            <span>a</span>
+            <span className="m-left">m</span>
           </div>
           <span className="word">
-            <span className="name inverse-orbit">J</span>
-            <span className="m-left name orbit">o</span>
-            <span className="m-left name inverse-orbit">v</span>
-            <span className="m-left name orbit">a</span>
-            <span className="m-left name inverse-orbit">n</span>
+            <span className="name">J</span>
+            <span className="m-left name">o</span>
+            <span className="m-left name">v</span>
+            <span className="m-left name">a</span>
+            <span className="m-left name">n</span>
           </span>
           <span className="word">
-            <span className="name orbit">S</span>
-            <span className="m-left name inverse-orbit">h</span>
-            <span className="m-left name orbit">a</span>
-            <span className="m-left name inverse-orbit">n</span>
-            <span className="m-left name orbit">d</span>
-            <span className="m-left name inverse-orbit">r</span>
-            <span className="m-left name orbit">o</span>
-            <span className="m-left inverse-orbit">,</span>
+            <span className="name">S</span>
+            <span className="m-left name">h</span>
+            <span className="m-left name">a</span>
+            <span className="m-left name">n</span>
+            <span className="m-left name">d</span>
+            <span className="m-left name">r</span>
+            <span className="m-left name">o</span>
+            <span className="m-left">,</span>
           </span>
           <br />
           <span className="word">
-            <span className="orbit">B</span>
-            <span className="m-left inverse-orbit ">l</span>
-            <span className="m-left orbit">o</span>
-            <span className="m-left inverse-orbit">c</span>
-            <span className="m-left orbit">k</span>
-            <span className="m-left inverse-orbit">c</span>
-            <span className="m-left orbit">h</span>
-            <span className="m-left inverse-orbit">a</span>
-            <span className="m-left orbit">i</span>
-            <span className="m-left inverse-orbit">n</span>
+            <span>B</span>
+            <span className="m-left ">l</span>
+            <span className="m-left ">o</span>
+            <span className="m-left ">c</span>
+            <span className="m-left ">k</span>
+            <span className="m-left ">c</span>
+            <span className="m-left ">h</span>
+            <span className="m-left ">a</span>
+            <span className="m-left ">i</span>
+            <span className="m-left ">n</span>
           </span>
           <span className="word">
-            <span className=" orbit">A</span>
-            <span className="m-left inverse-orbit">n</span>
-            <span className="m-left orbit">d</span>
+            <span>A</span>
+            <span className="m-left">n</span>
+            <span className="m-left">d</span>
           </span>
           <span className="word">
-            <span className="inverse-orbit">W</span>
-            <span className="m-left orbit">e</span>
-            <span className="m-left inverse-orbit">b</span>
+            <span>W</span>
+            <span className="m-left">e</span>
+            <span className="m-left">b</span>
           </span>
           <span className="word">
-            <span className="orbit">D</span>
-            <span className="m-left inverse-orbit">e</span>
-            <span className="m-left orbit">v</span>
-            <span className="m-left inverse-orbit">e</span>
-            <span className="m-left orbit">l</span>
-            <span className="m-left inverse-orbit">o</span>
-            <span className="m-left orbit">p</span>
-            <span className="m-left inverse-orbit">e</span>
-            <span className="m-left orbit">r</span>
+            <span>D</span>
+            <span className="m-left">e</span>
+            <span className="m-left">v</span>
+            <span className="m-left">e</span>
+            <span className="m-left">l</span>
+            <span className="m-left">o</span>
+            <span className="m-left">p</span>
+            <span className="m-left">e</span>
+            <span className="m-left">r</span>
           </span>
         </h1>
         <p></p>
