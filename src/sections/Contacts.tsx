@@ -25,30 +25,6 @@ const ContactsSection = () => {
         <div
           className="circle"
           onClick={() => {
-            openTab("https://www.facebook.com/shandrojovan");
-            ReactGa.event({
-              category: "Contact",
-              action: "Opened facebook"
-            });
-          }}
-        >
-          <i className="fab fa-facebook-f"></i>
-        </div>
-        <div
-          className="circle"
-          onClick={() => {
-            openTab("https://www.instagram.com/jovanshandro/");
-            ReactGa.event({
-              category: "Contact",
-              action: "Opened instagram"
-            });
-          }}
-        >
-          <i className="fab fa-instagram"></i>
-        </div>
-        <div
-          className="circle"
-          onClick={() => {
             window.open("mailto:shandrojovan@gmail.com");
             ReactGa.event({
               category: "Contact",
@@ -57,18 +33,6 @@ const ContactsSection = () => {
           }}
         >
           <i className="far fa-envelope"></i>
-        </div>
-        <div
-          className="circle"
-          onClick={() => {
-            openTab("https://www.xing.com/profile/Jovan_Shandro/cv");
-            ReactGa.event({
-              category: "Contact",
-              action: "Opened xing"
-            });
-          }}
-        >
-          <img src="./img/xing.webp" alt="" />
         </div>
       </div>
     </div>

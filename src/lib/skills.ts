@@ -1,27 +1,39 @@
 export const skills = [
-  "HTML",
-  "CSS",
-  "Javascript",
-  "Typescript",
   "React.js",
   "React Native",
+  "Next.js",
+  "Reactstrap",
+  "React Semantic UI",
+  "React Bootstrap",
   "Node.js",
-  "Vue.js",
-  "Svelte",
-  "Ionic",
-  "Firebase",
-  "Pouchdb",
+  "Express.js",
+  "Hapi.dev",
+  "REST APIs",
+  "Javascript",
+  "Typescript",
+  "Firebase Auth and Datastore",
   "MongoDb",
   "PostgreSQL",
+  "Pouchdb",
+  "HTML",
+  "CSS",
+  "Ionic",
+  "Vue.js",
+  "Svelte",
   "GraphQL",
   "Solidity",
   "Ethereum",
-  "C++",
-  "C",
-  "Algorithms"
 ];
 
 export const bars = [
+  {
+    name: "React",
+    width: "96%"
+  },
+  {
+    name: "React Native",
+    width: "94%"
+  },
   {
     name: "Node.js",
     width: "92%"
@@ -30,12 +42,4 @@ export const bars = [
     name: "Javascript",
     width: "91%"
   },
-  {
-    name: "React",
-    width: "94%"
-  },
-  {
-    name: "React Native",
-    width: "96%"
-  }
 ];

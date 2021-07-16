@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     title: "Sudoku Solver",
     description:
-      "My first project using typescript. Build with React.js, the project allows you to write your own sudoku by typing the values or importing a text file. Then it solves it for you if a solution exists. Some nice animations are present to make the experience more enjoyable.",
+      "My first project using typescript. Built with React.js, the project allows you to write your own sudoku by typing the values or importing a text file. Then it solves it for you if a solution exists. Some nice animations are present to make the experience more enjoyable.",
     githubLink: "https://github.com/JovanShandro/Sudoku-Solver",
     websiteLink: "https://focused-villani-6bab24.netlify.com/",
     backgroundColor: "rgb(90, 11, 70)",

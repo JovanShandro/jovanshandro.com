@@ -42,6 +42,26 @@ const MainSection = () => {
           </span>
           <br />
           <span className="word">
+            <span>W</span>
+            <span className="m-left">e</span>
+            <span className="m-left">b</span>
+            <span className="m-left">,</span>
+          </span>
+          <span className="word">
+            <span>M</span>
+            <span className="m-left">o</span>
+            <span className="m-left">b</span>
+            <span className="m-left">i</span>
+            <span className="m-left">l</span>
+            <span className="m-left">e</span>
+            <span className="m-left">,</span>
+          </span>
+          <span className="word">
+            <span>a</span>
+            <span className="m-left">n</span>
+            <span className="m-left">d</span>
+          </span>
+          <span className="word">
             <span>B</span>
             <span className="m-left ">l</span>
             <span className="m-left ">o</span>
@@ -53,16 +73,7 @@ const MainSection = () => {
             <span className="m-left ">i</span>
             <span className="m-left ">n</span>
           </span>
-          <span className="word">
-            <span>A</span>
-            <span className="m-left">n</span>
-            <span className="m-left">d</span>
-          </span>
-          <span className="word">
-            <span>W</span>
-            <span className="m-left">e</span>
-            <span className="m-left">b</span>
-          </span>
+          <br />
           <span className="word">
             <span>D</span>
             <span className="m-left">e</span>
