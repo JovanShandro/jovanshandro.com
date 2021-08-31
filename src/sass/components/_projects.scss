@@ -2,6 +2,23 @@
   height: minmax(calc(100vh), auto);
   width: 100vw;
 
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+
+    button {
+      min-height: 50px;
+      min-width: 200px;
+      border-radius: 5px;
+      border: none;
+      background-color: #eeffff;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+
   h2 {
     font-size: 25px !important;
   }

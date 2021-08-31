@@ -39,6 +39,9 @@ function App() {
 
       <VideoCard id="sorting" src="/img/sorting.mov" />
       <VideoCard id="blog" src="/img/blogapp.mov" />
+      <VideoCard id="rest_blog" src="/img/rest_blog.mp4" />
+      <VideoCard id="yelpcamp" src="/img/yelpcamp.mp4" />
+      <VideoCard id="quasartodo" src="/img/quasartodo.mp4" />
       <Navbar />
       <MainSection />
       <AboutSection />

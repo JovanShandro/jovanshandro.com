@@ -51,7 +51,7 @@ const Card: React.FC<Props> = ({
               onMouseLeave={() => setGithubHovered(false)}
               style={githubLinkStyle.current as CSSProperties}
               // if blog app
-              className={id === 2 ? "align-self-start" : ""}
+              //className={id === 2 ? "align-self-start" : ""}
             >
               <i className="macka fab fa-github"></i>
             </a>
