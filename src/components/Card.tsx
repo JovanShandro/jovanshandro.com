@@ -2,12 +2,10 @@ import React, { useState, useRef, CSSProperties } from "react";
 import { Project } from "../lib/types";
 
 type Props = {
-  id: number;
   videoId?: string;
 } & Project;
 
 const Card: React.FC<Props> = ({
-  id,
   title,
   description,
   githubLink,
@@ -19,18 +17,18 @@ const Card: React.FC<Props> = ({
   backgroundImage,
   videoId
 }) => {
-  const [githubHovered, setGithubHovered] = useState(false);
-  const [websiteHovered, setWebsiteHovered] = useState(false);
+  const [leftLinkHovered, setGithubHovered] = useState(false);
+  const [rightLinkHovered, setWebsiteHovered] = useState(false);
 
-  const githubLinkStyle = useRef<CSSProperties>({ color: linkColor });
-  const websiteLinkStyle = useRef<CSSProperties>({ color: linkColor });
+  const leftLinkStyle = useRef<CSSProperties>({ color: linkColor });
+  const rightLinkStyle = useRef<CSSProperties>({ color: linkColor });
 
-  githubLinkStyle.current = {
-    color: githubHovered ? hoverLinkColor : linkColor
+  leftLinkStyle.current = {
+    color: leftLinkHovered ? hoverLinkColor : linkColor
   };
 
-  websiteLinkStyle.current = {
-    color: websiteHovered ? hoverLinkColor : linkColor
+  rightLinkStyle.current = {
+    color: rightLinkHovered ? hoverLinkColor : linkColor
   };
 
   return (
@@ -49,9 +47,7 @@ const Card: React.FC<Props> = ({
                 setGithubHovered(true);
               }}
               onMouseLeave={() => setGithubHovered(false)}
-              style={githubLinkStyle.current as CSSProperties}
-              // if blog app
-              //className={id === 2 ? "align-self-start" : ""}
+              style={leftLinkStyle.current as CSSProperties}
             >
               <i className="macka fab fa-github"></i>
             </a>
@@ -65,18 +61,25 @@ const Card: React.FC<Props> = ({
               onMouseLeave={() => {
                 setWebsiteHovered(false);
               }}
-              style={websiteLinkStyle.current as CSSProperties}
+              style={rightLinkStyle.current as CSSProperties}
             >
               <i className="plane fas fa-paper-plane"></i>
             </a>
           ) : (
             <i
+              onMouseEnter={() => {
+                setWebsiteHovered(true);
+              }}
+              onMouseLeave={() => {
+                setWebsiteHovered(false);
+              }}
+              style={rightLinkStyle.current as CSSProperties}
               onClick={() => {
                 (document.querySelector(
                   `#${videoId}`
                 )! as HTMLDivElement).style.display = "flex";
               }}
-              className={`plane fas fa-film video-${videoId}`}
+              className={`plane fas fa-film video`}
             ></i>
           )}
         </div>

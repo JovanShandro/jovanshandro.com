@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       </div>
       <div className="category-projects">
         {R.reverse(projects[tab]).map((props: Project, index: number) => (
-          <Card key={index} id={index} {...props} />
+          <Card key={index} {...props} />
         ))}
       </div>
     </div>

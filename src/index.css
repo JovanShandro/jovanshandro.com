@@ -327,41 +327,9 @@ nav {
     justify-content: space-around; }
   .category-projects .card a {
     font-size: 13px !important; }
-  .category-projects .card i.video-rest_blog {
-    color: #949797;
+  .category-projects .card i.video {
     font-size: 13px !important;
     align-self: center; }
-  .category-projects .card i.video-rest_blog:hover {
-    color: #c8caca;
-    cursor: pointer; }
-  .category-projects .card i.video-quasartodo {
-    color: #949797;
-    font-size: 13px !important;
-    align-self: center; }
-  .category-projects .card i.video-quasartodo:hover {
-    color: #c8caca;
-    cursor: pointer; }
-  .category-projects .card i.video-yelpcamp {
-    color: #949797;
-    font-size: 13px !important;
-    align-self: center; }
-  .category-projects .card i.video-yelpcamp:hover {
-    color: #c8caca;
-    cursor: pointer; }
-  .category-projects .card i.video-blog {
-    color: #949797;
-    font-size: 13px !important;
-    align-self: center; }
-  .category-projects .card i.video-blog:hover {
-    color: #c8caca;
-    cursor: pointer; }
-  .category-projects .card i.video-sorting {
-    color: #69898a;
-    font-size: 13px !important;
-    align-self: center; }
-  .category-projects .card i.video-sorting:hover {
-    color: #a5bebe;
-    cursor: pointer; }
   .category-projects .card a:hover {
     cursor: pointer; }
 

@@ -37,11 +37,11 @@ function App() {
         <title>Jovan Shandro</title>
       </Head>
 
-      <VideoCard id="sorting" src="/img/sorting.mov" />
-      <VideoCard id="blog" src="/img/blogapp.mov" />
-      <VideoCard id="rest_blog" src="/img/rest_blog.mp4" />
-      <VideoCard id="yelpcamp" src="/img/yelpcamp.mp4" />
-      <VideoCard id="quasartodo" src="/img/quasartodo.mp4" />
+      <VideoCard id="sorting" src="/videos/sorting.mov" />
+      <VideoCard id="blog" src="/videos/blogapp.mov" />
+      <VideoCard id="rest_blog" src="/videos/rest_blog.mp4" />
+      <VideoCard id="yelpcamp" src="/videos/yelpcamp.mp4" />
+      <VideoCard id="quasartodo" src="/videos/quasartodo.mp4" />
       <Navbar />
       <MainSection />
       <AboutSection />
