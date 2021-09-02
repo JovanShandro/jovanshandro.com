@@ -31,15 +31,15 @@ export const bars = [
     width: "96%"
   },
   {
-    name: "React Native",
-    width: "94%"
-  },
-  {
     name: "Node.js",
     width: "92%"
   },
   {
     name: "Javascript",
     width: "91%"
+  },
+  {
+    name: "React Native",
+    width: "80%"
   },
 ];
