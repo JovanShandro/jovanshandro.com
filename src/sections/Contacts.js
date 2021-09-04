@@ -1,7 +1,7 @@
 import React from "react";
 
 const ContactsSection = () => {
-  const openTab = (url: string) => {
+  const openTab = (url) => {
     window.open(url, "_blank");
   };
 

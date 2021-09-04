@@ -31,11 +31,11 @@ const skills = [
 const barWidths = ["96%", "92%", "91%", "80%"];
 const bars = ["React", "Node.js", "Javascript", "React Native"];
 
-const SkillsSection: React.FC<{}> = () => {
-  const ref = useRef<any>(null);
-  const refs = useRef<any>([]);
+const SkillsSection = () => {
+  const ref = useRef(null);
+  const refs = useRef([]);
 
-  const addToRefs = (el: any) => {
+  const addToRefs = (el) => {
     if (el && !refs.current.includes(el)) {
       refs.current.push(el);
     }
@@ -49,7 +49,7 @@ const SkillsSection: React.FC<{}> = () => {
         start: "top 60%",
       },
     });
-    refs.current.map((element: any, index: number) => {
+    refs.current.forEach((element, index) => {
       tl.fromTo(
         element.childNodes[0],
         { width: 0 },

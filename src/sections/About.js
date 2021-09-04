@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 
-const AboutSection: React.FC = () => {
+const AboutSection = () => {
   useEffect(() => {
     gsap.from(".star", {
       scrollTrigger: {

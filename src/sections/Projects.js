@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Card from "../components/Card";
 const R = require("ramda");
 
-export const projects: any = {
+export const projects = {
   "On The Side": [
     {
       title: "Movie Search",
@@ -196,7 +196,7 @@ const ProjectsSection = () => {
         ))}
       </div>
       <div className="category-projects">
-        {R.reverse(projects[tab]).map((props: any, index: number) => (
+        {R.reverse(projects[tab]).map((props, index) => (
           <Card key={index} {...props} />
         ))}
       </div>

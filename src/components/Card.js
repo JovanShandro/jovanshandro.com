@@ -1,10 +1,6 @@
-import React, { useState, useRef, CSSProperties } from "react";
+import React, { useState, useRef } from "react";
 
-type Props = {
-  videoId?: string;
-} & any;
-
-const Card: React.FC<Props> = ({
+const Card = ({
   title,
   description,
   githubLink,
@@ -19,8 +15,8 @@ const Card: React.FC<Props> = ({
   const [leftLinkHovered, setLeftLinkHovered] = useState(false);
   const [rightLinkHovered, setRightLinkHovered] = useState(false);
 
-  const leftLinkStyle = useRef<CSSProperties>({ color: linkColor });
-  const rightLinkStyle = useRef<CSSProperties>({ color: linkColor });
+  const leftLinkStyle = useRef({ color: linkColor });
+  const rightLinkStyle = useRef({ color: linkColor });
 
   leftLinkStyle.current = {
     color: leftLinkHovered ? hoverLinkColor : linkColor,
@@ -31,8 +27,7 @@ const Card: React.FC<Props> = ({
   };
 
   const showVideo = () => {
-    (document.querySelector(`#${videoId}`)! as HTMLDivElement).style.display =
-      "flex";
+    document.querySelector(`#${videoId}`).style.display = "flex";
   };
 
   return (
@@ -51,7 +46,7 @@ const Card: React.FC<Props> = ({
                 setLeftLinkHovered(true);
               }}
               onMouseLeave={() => setLeftLinkHovered(false)}
-              style={leftLinkStyle.current as CSSProperties}
+              style={leftLinkStyle.current}
             >
               <i className="left-icon fab fa-github"></i>
             </a>
@@ -65,7 +60,7 @@ const Card: React.FC<Props> = ({
               onMouseLeave={() => {
                 setRightLinkHovered(false);
               }}
-              style={rightLinkStyle.current as CSSProperties}
+              style={rightLinkStyle.current}
             >
               <i className="right-icon fas fa-paper-plane"></i>
             </a>
@@ -77,7 +72,7 @@ const Card: React.FC<Props> = ({
               onMouseLeave={() => {
                 setRightLinkHovered(false);
               }}
-              style={rightLinkStyle.current as CSSProperties}
+              style={rightLinkStyle.current}
               onClick={showVideo}
               className={`right-icon fas fa-film video`}
             ></i>

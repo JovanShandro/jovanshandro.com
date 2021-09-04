@@ -22,11 +22,11 @@ const Navbar = () => {
 
   useEffect(() => {
     const handler = () => {
-      var scrolled = document.scrollingElement!.scrollTop;
+      var scrolled = document.scrollingElement.scrollTop;
       if (scrolled >= 50) {
-        document.querySelector("nav")?.classList.add("scrolled");
+        document.querySelector("nav").classList.add("scrolled");
       } else {
-        document.querySelector("nav")?.classList.remove("scrolled");
+        document.querySelector("nav").classList.remove("scrolled");
       }
     };
     document.addEventListener("scroll", handler);

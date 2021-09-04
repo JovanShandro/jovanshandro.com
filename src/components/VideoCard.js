@@ -1,13 +1,8 @@
 import React, { useRef } from "react";
 
-interface Props {
-  src: string;
-  id: string;
-}
-
-const VideoCard: React.FC<Props> = ({ src, id }) => {
-  const modal = useRef<HTMLDivElement>(null);
-  const video = useRef<HTMLVideoElement>(null);
+const VideoCard = ({ src, id }) => {
+  const modal = useRef(null);
+  const video = useRef(null);
 
   return (
     <div id={id} className="video-card-container" ref={modal}>
@@ -15,9 +10,9 @@ const VideoCard: React.FC<Props> = ({ src, id }) => {
         <div
           className="closeContainer"
           onClick={() => {
-            modal.current!.style.display = "none";
-            video.current!.pause();
-            video.current!.currentTime = 0;
+            modal.current.style.display = "none";
+            video.current.pause();
+            video.current.currentTime = 0;
           }}
         >
           <span className="close">&times;</span>
