@@ -97,7 +97,7 @@ const MainSection = () => {
         </div>
       </div>
       <div className="profile-image">
-        <img src="img/profile.webp" alt="" />
+        <img src="img/code.svg" alt="" />
       </div>
     </div>
   );

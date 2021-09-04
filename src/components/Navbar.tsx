@@ -1,5 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { NavLinks } from "../lib";
+
+const NavLinks = [
+  { ref: "#", name: "Home" },
+  { ref: "#about", name: "About" },
+  {
+    ref: "#skills",
+    name: "Skills",
+  },
+  {
+    ref: "#work",
+    name: "Projects",
+  },
+  {
+    ref: "#contact",
+    name: "Contact",
+  },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +42,7 @@ const Navbar = () => {
         <div className="nav-brand">
           <h1 id="nav-h1">JSh</h1>
         </div>
-        <div className="hamburger" onClick={() => setIsOpen(v => !v)}>
+        <div className="hamburger" onClick={() => setIsOpen((v) => !v)}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>

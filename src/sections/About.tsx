@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
 
 const AboutSection: React.FC = () => {
+  useEffect(() => {
+    gsap.from(".star", {
+      scrollTrigger: {
+        trigger: ".star",
+        toggleActions: "play none none none",
+        start: "top 40%",
+      },
+      opacity: "0",
+      width: "0",
+      x: "500",
+      ease: "bounce",
+      duration: 2,
+    });
+  }, []);
+
   return (
     <div className="wrapper about" id="about">
       <h1>About Me</h1>

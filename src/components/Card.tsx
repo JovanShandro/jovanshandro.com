@@ -1,9 +1,8 @@
 import React, { useState, useRef, CSSProperties } from "react";
-import { Project } from "../lib/types";
 
 type Props = {
   videoId?: string;
-} & Project;
+} & any;
 
 const Card: React.FC<Props> = ({
   title,
@@ -15,20 +14,25 @@ const Card: React.FC<Props> = ({
   linkColor,
   hoverLinkColor,
   backgroundImage,
-  videoId
+  videoId,
 }) => {
-  const [leftLinkHovered, setGithubHovered] = useState(false);
-  const [rightLinkHovered, setWebsiteHovered] = useState(false);
+  const [leftLinkHovered, setLeftLinkHovered] = useState(false);
+  const [rightLinkHovered, setRightLinkHovered] = useState(false);
 
   const leftLinkStyle = useRef<CSSProperties>({ color: linkColor });
   const rightLinkStyle = useRef<CSSProperties>({ color: linkColor });
 
   leftLinkStyle.current = {
-    color: leftLinkHovered ? hoverLinkColor : linkColor
+    color: leftLinkHovered ? hoverLinkColor : linkColor,
   };
 
   rightLinkStyle.current = {
-    color: rightLinkHovered ? hoverLinkColor : linkColor
+    color: rightLinkHovered ? hoverLinkColor : linkColor,
+  };
+
+  const showVideo = () => {
+    (document.querySelector(`#${videoId}`)! as HTMLDivElement).style.display =
+      "flex";
   };
 
   return (
@@ -44,42 +48,38 @@ const Card: React.FC<Props> = ({
             <a
               href={githubLink}
               onMouseEnter={() => {
-                setGithubHovered(true);
+                setLeftLinkHovered(true);
               }}
-              onMouseLeave={() => setGithubHovered(false)}
+              onMouseLeave={() => setLeftLinkHovered(false)}
               style={leftLinkStyle.current as CSSProperties}
             >
-              <i className="macka fab fa-github"></i>
+              <i className="left-icon fab fa-github"></i>
             </a>
           )}
           {websiteLink ? (
             <a
               href={websiteLink}
               onMouseEnter={() => {
-                setWebsiteHovered(true);
+                setRightLinkHovered(true);
               }}
               onMouseLeave={() => {
-                setWebsiteHovered(false);
+                setRightLinkHovered(false);
               }}
               style={rightLinkStyle.current as CSSProperties}
             >
-              <i className="plane fas fa-paper-plane"></i>
+              <i className="right-icon fas fa-paper-plane"></i>
             </a>
           ) : (
             <i
               onMouseEnter={() => {
-                setWebsiteHovered(true);
+                setRightLinkHovered(true);
               }}
               onMouseLeave={() => {
-                setWebsiteHovered(false);
+                setRightLinkHovered(false);
               }}
               style={rightLinkStyle.current as CSSProperties}
-              onClick={() => {
-                (document.querySelector(
-                  `#${videoId}`
-                )! as HTMLDivElement).style.display = "flex";
-              }}
-              className={`plane fas fa-film video`}
+              onClick={showVideo}
+              className={`right-icon fas fa-film video`}
             ></i>
           )}
         </div>

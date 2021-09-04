@@ -1,13 +1,17 @@
-import React from "react";
-import VideoCard from "../components/VideoCard";
-import Navbar from "../components/Navbar";
-import MainSection from "../sections/Main";
-import AboutSection from "../sections/About";
-import SkillsSection from "../sections/Skills";
-import ProjectsSection from "../sections/Projects";
-import ContactsSection from "../sections/Contacts";
-import Footer from "../components/Footer";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Head from "next/head";
+import React from "react";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import VideoCard from "../components/VideoCard";
+import AboutSection from "../sections/About";
+import ContactsSection from "../sections/Contacts";
+import MainSection from "../sections/Main";
+import ProjectsSection from "../sections/Projects";
+import SkillsSection from "../sections/Skills";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   return (

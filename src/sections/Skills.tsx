@@ -1,7 +1,67 @@
-import React from "react";
-import { skills, bars } from "../lib";
+import gsap from "gsap";
+import React, { useEffect, useRef } from "react";
+
+const skills = [
+  "React.js",
+  "React Native",
+  "Next.js",
+  "Material UI",
+  "Reactstrap",
+  "React Semantic UI",
+  "React Bootstrap",
+  "Node.js",
+  "Express.js",
+  "Hapi.dev",
+  "REST APIs",
+  "Javascript",
+  "Typescript",
+  "Firebase Auth and Datastore",
+  "MongoDb",
+  "PostgreSQL",
+  "Pouchdb",
+  "HTML",
+  "CSS",
+  "Vue.js",
+  "Svelte",
+  "GraphQL",
+  "Solidity",
+  "Ionic",
+];
+
+const barWidths = ["96%", "92%", "91%", "80%"];
+const bars = ["React", "Node.js", "Javascript", "React Native"];
 
 const SkillsSection: React.FC<{}> = () => {
+  const ref = useRef<any>(null);
+  const refs = useRef<any>([]);
+
+  const addToRefs = (el: any) => {
+    if (el && !refs.current.includes(el)) {
+      refs.current.push(el);
+    }
+  };
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: document.getElementsByClassName("mainSkills"),
+        toggleActions: "play none none none",
+        start: "top 60%",
+      },
+    });
+    refs.current.map((element: any, index: number) => {
+      tl.fromTo(
+        element.childNodes[0],
+        { width: 0 },
+        {
+          width: barWidths[index],
+          ease: "bounce",
+          duration: 0.5,
+        }
+      );
+    });
+  }, []);
+
   return (
     <div className="wrapper skills" id="skills">
       <div className="skills-content">
@@ -15,16 +75,18 @@ const SkillsSection: React.FC<{}> = () => {
           ))}
         </p>
         <p className="skills-info">Out of them, my strongest are:</p>
-        {bars.map((bar, i) => (
-          <div className="mainSkillContainer" key={i}>
-            <div className="tag">
-              <p>{bar.name}</p>
+        <div ref={ref} className="mainSkills">
+          {bars.map((name, i) => (
+            <div className="mainSkillContainer" key={i}>
+              <div className="tag">
+                <p>{name}</p>
+              </div>
+              <div className="progressbar" ref={addToRefs}>
+                <div className="bar"></div>
+              </div>
             </div>
-            <div className="progressbar">
-              <div style={{ width: bar.width }} className="bar"></div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

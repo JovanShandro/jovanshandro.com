@@ -1,12 +1,13 @@
 /* animations */
-@keyframes bounce {
+
+@keyframes move {
   0% {
-    transform: translateY(-7px);
+    transform: translateY(-5px);
   }
-  80% {
-    transform: translateY(+3px);
+  50% {
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-5px);
   }
 }
