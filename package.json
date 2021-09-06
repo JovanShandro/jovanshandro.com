@@ -3,27 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@next/bundle-analyzer": "^11.1.2",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "concurrently": "^5.3.0",
     "gsap": "^3.7.1",
     "next": "^9.5.3",
-    "node-sass": "^4.14.1",
-    "ramda": "^0.27.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.2"
   },
   "scripts": {
     "start": "next start",
-    "analyze": "ANALYZE=true yarn build",
     "build": "next build && next export",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "compile:sass": "node-sass src/sass/main.scss src/index.css -w",
-    "dev": "concurrently \"next dev\" \"yarn compile:sass\""
+    "dev": "next dev"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -1,0 +1,136 @@
+.navbar {
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.navContentWrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navBrand {
+  display: none;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  width: 60%;
+  max-width: 550px;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar a {
+  color: rgb(212, 211, 211);
+  font-size: 2rem !important;
+  text-decoration: none;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  font-size: 2.3rem;
+  color: white;
+}
+
+@media screen and (max-width: 725px) {
+  .navContentWrapper {
+    position: relative;
+  }
+
+  .navBrand {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    font-family: "Great Vibes", cursive;
+    z-index: 2;
+    left: 5%;
+    top: 55%;
+    transform: translate(5%, -45%);
+  }
+
+  .hamburger {
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    padding: 3px;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  .navLinks {
+    position: fixed;
+    max-width: none;
+    background: #707070;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    clip-path: circle(100px at 95% -20%);
+    -webkit-clip-path: circle(100px at 95% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .navLinks li {
+    opacity: 0;
+  }
+
+  .navLinks li:nth-child(1) {
+    transition: all 0.5s ease 0.1s;
+  }
+
+  .navLinks li:nth-child(2) {
+    transition: all 0.5s ease 0.2s;
+  }
+
+  .navLinks li:nth-child(3) {
+    transition: all 0.5s ease 0.3s;
+  }
+
+  .navLinks li:nth-child(4) {
+    transition: all 0.5s ease 0.4s;
+  }
+
+  .navLinks li:nth-child(5) {
+    transition: all 0.5s ease 0.5s;
+  }
+
+  .navLinks li.fade {
+    opacity: 1;
+  }
+
+  .open {
+    clip-path: circle(1700px at 90% -10%);
+    -webkit-clip-path: circle(1700px at 90% -10%);
+    pointer-events: all;
+  }
+}
+
+/* media queries */
+@media screen and (max-width: 580px) {
+  .navLinks li:hover {
+    transform: none !important;
+    color: white;
+  }
+  .navbar li.nav-item {
+    margin-left: 5px;
+  }
+}

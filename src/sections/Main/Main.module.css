@@ -1,0 +1,153 @@
+.mainInfoSection {
+  position: relative;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh);
+  min-height: 500px;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.mainInfoSection::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  background-image: url("/img/main.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.text {
+  text-align: center;
+}
+
+.word {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+#mainTitle {
+  color: #fff;
+  font-size: 5rem;
+  cursor: context-menu;
+}
+
+.mainInfoSection span:not(.navbar-toggler-icon) {
+  display: inline-block;
+}
+
+/*span:not(.navbar-toggler-icon) {*/
+/*display: inline-block;*/
+/*}*/
+
+.button {
+  padding: 12px 25px;
+  background-color: none;
+  border: 3px solid #4a739a;
+  border-radius: 10px;
+  color: #4a739a;
+  font-size: 1.4rem !important;
+  letter-spacing: 2px;
+  position: relative;
+  top: 80px;
+  overflow: hidden;
+  transition: 0.5s;
+  display: inline-block;
+  width: 190px !important;
+}
+
+.button:hover {
+  color: #fff;
+}
+
+.button::before {
+  content: "";
+  background-color: #4a739a;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  height: 100%;
+}
+
+.profileImage img {
+  animation: move 2.5s ease infinite;
+  height: calc(100vh - 150px);
+  max-height: 900px;
+  max-width: 550px;
+}
+
+.name {
+  color: #4a739a;
+}
+
+.mLeft {
+  margin-left: 1px;
+}
+
+.mainInfoSection
+  span:not(.word):not(.navbar-toggler-icon):not(.phonespan):hover {
+  color: #8cc0f0;
+  transform: translateY(-5px);
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* media queries */
+@media screen and (max-width: 1435px) {
+  .profileImage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #mainTitle {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #mainTitle {
+    font-size: 4rem;
+  }
+}
+

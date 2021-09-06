@@ -1,0 +1,139 @@
+.skills {
+  height: minmax(calc(100vh), auto);
+  margin-top: 60px;
+  padding-bottom: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+.title {
+  color: #ddd5d5cc !important;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  font-size: 16rem;
+  text-align: center;
+}
+
+.skillsContent {
+  width: 100%;
+}
+
+.skills::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.2;
+  background-image: url("/img/skills.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skillsInfo {
+  font-size: 3rem;
+  color: #bebebe;
+  max-width: 800px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.mainSkillContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.tag {
+  width: 180px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: transparent !important;
+  margin-right: 30px;
+}
+
+.tag p {
+  color: #fff;
+  text-align: left;
+  padding-left: 10px;
+  font-size: 3rem;
+  padding-top: 10px;
+  color: transparent !important;
+  background: rgb(3, 128, 107) !important;
+  background: -webkit-linear-gradient(
+    left,
+    rgb(73, 190, 181),
+    rgb(3, 128, 107)
+  ) !important;
+  background: -moz-linear-gradient(
+    left,
+    rgb(73, 190, 181),
+    rgb(3, 128, 107)
+  ) !important;
+  background: linear-gradient(
+    to right,
+    rgb(73, 190, 181),
+    rgb(3, 128, 107)
+  ) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+}
+
+.progressbar {
+  position: relative;
+  width: 600px;
+  height: 20px;
+  border: 2px solid rgb(88, 233, 209);
+  border-radius: 20px;
+  margin-top: 17px;
+}
+
+.bar {
+  position: absolute;
+  background-color: rgb(73, 190, 181);
+  height: 10px;
+  border-radius: 20px;
+  margin: 2.7px;
+}
+
+.skill {
+  margin-left: 5px;
+}
+
+.skill:hover {
+  color: #3da1a8 !important;
+}
+
+/* media queries */
+@media screen and (max-width: 985px) {
+  .tag {
+    padding: 0 !important;
+  }
+  .tag p {
+    text-align: center !important;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 3rem !important;
+    padding: 0 !important;
+    transform: none !important;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .title {
+    font-size: 12rem !important;
+  }
+}
