@@ -1,0 +1,21 @@
+.introAnimation {
+  position: fixed;
+  z-index: 10;
+}
+
+.relative {
+  position: relative;
+}
+
+.box {
+  transform: rotate(-45deg);
+  background-color: steelblue;
+  height: 20%;
+  position: fixed;
+  transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  left: -150px;
+}

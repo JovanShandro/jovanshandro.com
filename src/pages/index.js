@@ -4,6 +4,7 @@ import Head from "next/head";
 import React from "react";
 import Footer from "components/Footer";
 import Navbar from "components/Navbar";
+import IntroAnimation from "components/IntroAnimation";
 import VideoCard from "components/VideoCard";
 import AboutSection from "sections/About";
 import ContactsSection from "sections/Contacts";
@@ -46,6 +47,8 @@ function App() {
       <VideoCard id="rest_blog" src="/videos/rest_blog.mp4" />
       <VideoCard id="yelpcamp" src="/videos/yelpcamp.mp4" />
       <VideoCard id="quasartodo" src="/videos/quasartodo.mp4" />
+
+      <IntroAnimation />
       <Navbar />
       <MainSection />
       <AboutSection />
