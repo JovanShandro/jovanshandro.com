@@ -43,21 +43,19 @@ const SkillsSection = () => {
   };
 
   useEffect(() => {
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: document.getElementsByClassName("mainSkills"),
-        toggleActions: "play none none none",
-        start: "top 60%",
-      },
-    });
     refs.current.forEach((element, index) => {
-      tl.fromTo(
+      gsap.fromTo(
         element.childNodes[0],
         { width: 0 },
         {
           width: barWidths[index],
-          ease: "bounce",
-          duration: 0.5,
+          ease: "power2",
+          duration: 1,
+          scrollTrigger: {
+            trigger: document.getElementsByClassName("mainSkills"),
+            toggleActions: "play none none none",
+            start: "top 60%",
+          },
         }
       );
     });
