@@ -95,7 +95,18 @@ export const projects = {
       hoverLinkColor: "rgb(165, 190, 190)",
       backgroundImage: 'url("/img/sortRN.webp")',
       videoId: "sorting",
-    },
+    },{
+      title: "Personal Website",
+      description:
+        "The page you are currently looking at. My personal website in which you can find some of the side projects I have worked on and some websites I have developed as part of different courses. It was built with Next.js, CSS modules and GSAP. ",
+      githubLink: "https://github.com/JovanShandro/jovanshandro.com",
+      websiteLink: "#",
+      backgroundColor: "rgb(4, 29, 52)",
+      paragraphColor: "rgb(194, 188, 188)",
+      linkColor: "rgb(34, 74, 112)",
+      hoverLinkColor: "rgb(17, 123, 223)",
+      backgroundImage: 'url("/img/mywebsite.webp")',
+    }
   ],
   Courses: [
     {
