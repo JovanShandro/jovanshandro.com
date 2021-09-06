@@ -48,6 +48,49 @@
   justify-self: center;
 }
 
+.dropdown {
+  color: var(--titleColor);
+  max-width: 230px;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 3.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
+
+.text i {
+  margin-left: 15px;
+}
+
+.menu {
+  position: absolute;
+  font-size: 2rem;
+  left: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(77, 77, 77);
+  width: 200px;
+  color: white;
+}
+
+.menu hr {
+  color: white;
+  opacity: .5;
+  margin-bottom: 0;
+}
+
+.dropdownItem {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 /* firefox only */
 @-moz-document url-prefix() {
   .projects p {
