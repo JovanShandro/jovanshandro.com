@@ -24,19 +24,6 @@ export const projects = {
       backgroundImage: 'url("/img/todo.webp")',
     },
     {
-      title: "Pathfinding Visualiser",
-      description:
-        "A nice and easy way to see how different pathfinding algorithms work by pilaying with a customizable board and cool animations. It includes Dijkstra, A*, BFS, and Greedy Best First Search. You can also add weights when performing Dijkstra.",
-      githubLink:
-        "https://github.com/JovanShandro/Pathfinding-algorithm-visualizer",
-      websiteLink: "https://blissful-shirley-0a890a.netlify.com/",
-      backgroundColor: "rgb(41, 36, 41)",
-      paragraphColor: "rgb(194, 188, 188)",
-      linkColor: "rgb(146, 140, 145)",
-      hoverLinkColor: "rgb(192, 189, 191)",
-      backgroundImage: 'url("/img/pathCrop.webp")',
-    },
-    {
       title: "Sorting Visualiser",
       description:
         "A nice and easy way to see how different sorting algorithms work by visualizing the sorting of an array of 100 random numbers. It includes Merge, Quick, Heap, Selection, Counting, Insertion, Radix, and Bubble sort.",
@@ -106,7 +93,20 @@ export const projects = {
       linkColor: "rgb(34, 74, 112)",
       hoverLinkColor: "rgb(17, 123, 223)",
       backgroundImage: 'url("/img/mywebsite.webp")',
-    }
+    },
+    {
+      title: "Pathfinding Visualiser",
+      description:
+      "Capable of visualizing different algorithms including Dijkstra, A*, BFS, and Greedy Best First Search. You can also add weights when performing Dijkstra. I just recently refactored the code and added tests using Cypress. The frontend framework used is Vue.js.",
+      githubLink:
+        "https://github.com/JovanShandro/Pathfinding-algorithm-visualizer",
+      websiteLink: "https://blissful-shirley-0a890a.netlify.com/",
+      backgroundColor: "rgb(41, 36, 41)",
+      paragraphColor: "rgb(194, 188, 188)",
+      linkColor: "rgb(146, 140, 145)",
+      hoverLinkColor: "rgb(192, 189, 191)",
+      backgroundImage: 'url("/img/pathCrop.webp")',
+    },
   ],
   Courses: [
     {
