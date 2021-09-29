@@ -82,7 +82,8 @@ export const projects = {
       hoverLinkColor: "rgb(165, 190, 190)",
       backgroundImage: 'url("/img/sortRN.webp")',
       videoId: "sorting",
-    },{
+    },
+    {
       title: "Personal Website",
       description:
         "The page you are currently looking at. My personal website in which you can find some of the side projects I have worked on and some websites I have developed as part of different courses. It was built with Next.js, CSS modules and GSAP. ",
@@ -97,15 +98,27 @@ export const projects = {
     {
       title: "Pathfinding Visualiser",
       description:
-      "Capable of visualizing different algorithms including Dijkstra, A*, BFS, and Greedy Best First Search. You can also add weights when performing Dijkstra. I just recently refactored the code and added tests using Cypress. The frontend framework used is Vue.js.",
+        "Capable of visualizing different algorithms including Dijkstra, A*, BFS, and Greedy Best First Search. You can also add weights when performing Dijkstra. I just recently refactored the code and added tests using Cypress. The frontend framework used is Vue.js.",
       githubLink:
         "https://github.com/JovanShandro/Pathfinding-algorithm-visualizer",
       websiteLink: "https://blissful-shirley-0a890a.netlify.com/",
+      backgroundColor: "rgb(122, 122, 122)",
+      paragraphColor: "rgb(233, 233, 233)",
+      linkColor: "rgb(194, 194, 194)",
+      hoverLinkColor: "rgb(212, 212, 212)",
+      backgroundImage: 'url("/img/pathCrop.webp")',
+    },
+    {
+      title: "Travel Log",
+      description:
+        "A simple travel log application built with Vue.js, and Node.js. The app is not production ready, I coded it to get more familiar with GraphQL and Vue3.",
+      githubLink: "https://github.com/JovanShandro/Travel-Log/",
       backgroundColor: "rgb(41, 36, 41)",
       paragraphColor: "rgb(194, 188, 188)",
       linkColor: "rgb(146, 140, 145)",
       hoverLinkColor: "rgb(192, 189, 191)",
-      backgroundImage: 'url("/img/pathCrop.webp")',
+      backgroundImage: 'url("/img/travel_log.webp")',
+      videoId: "travel_log",
     },
   ],
   Courses: [

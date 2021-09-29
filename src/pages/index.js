@@ -47,6 +47,7 @@ function App() {
       <VideoCard id="rest_blog" src="/videos/rest_blog.webm" />
       <VideoCard id="yelpcamp" src="/videos/yelpcamp.webm" />
       <VideoCard id="quasartodo" src="/videos/quasartodo.webm" />
+      <VideoCard id="travel_log" src="/videos/travel_log.webm" />
 
       <IntroAnimation />
       <Navbar />
