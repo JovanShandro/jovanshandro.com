@@ -29,16 +29,6 @@ function App() {
           name="keywords"
           content="blockchain, javascript, web, developer, student, computer science, programming"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-          crossOrigin="anonymous"
-        />
         <title>Jovan Shandro</title>
       </Head>
 
