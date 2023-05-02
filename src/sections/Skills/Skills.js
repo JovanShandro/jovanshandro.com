@@ -3,34 +3,32 @@ import React, { useEffect, useRef } from "react";
 import styles from "./Skills.module.css";
 
 const skills = [
-  "React.js",
-  "React Native",
+  "Angular",
+  "React",
   "Next.js",
-  "Material UI",
-  "Reactstrap",
-  "React Semantic UI",
-  "React Bootstrap",
+  "Vue",
+  "React Native",
+  "Svelte",
+  "HTML",
+  "CSS",
+  "Javascript",
+  "Typescript",
   "Node.js",
   "Express.js",
   "Hapi.dev",
   "REST APIs",
-  "Javascript",
-  "Typescript",
-  "Firebase Auth and Datastore",
+  "GraphQL",
+  "Material UI",
+  "Reactstrap",
+  "React Semantic UI",
+  "React Bootstrap",
   "MongoDb",
   "PostgreSQL",
   "Pouchdb",
-  "HTML",
-  "CSS",
-  "Vue.js",
-  "Svelte",
-  "GraphQL",
-  "Solidity",
-  "Ionic",
 ];
 
-const barWidths = ["96%", "92%", "91%", "80%"];
-const bars = ["React", "Node.js", "Javascript", "React Native"];
+const barWidths = ["96%", "90%", "89%", "80%"];
+const bars = ["Angular", "React", "Vue", "Node.js"];
 
 const SkillsSection = () => {
   const ref = useRef(null);

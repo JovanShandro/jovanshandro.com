@@ -27,8 +27,7 @@
 
 .buttons {
   display: flex;
-  justify-content: space-evenly;
-  width: 80%;
+  justify-content: space-around;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -150,4 +149,3 @@
     font-size: 4rem;
   }
 }
-

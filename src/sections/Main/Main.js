@@ -27,12 +27,9 @@ const content = [
   "am",
   "Jovan",
   "Shandro",
+  ",",
   "",
-  "Web,",
-  "Mobile,",
-  "and",
-  "Blockchain",
-  "",
+  "Frontend",
   "Developer",
 ];
 
