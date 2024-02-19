@@ -29,11 +29,6 @@ function App() {
           name="keywords"
           content="blockchain, javascript, web, developer, student, computer science, programming"
         />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6514394926327022"
-          crossorigin="anonymous"
-        ></script>
         <title>Jovan Shandro</title>
       </Head>
 
